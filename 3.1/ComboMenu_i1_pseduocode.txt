@@ -1,0 +1,7 @@
+Iteration 1
+
+Ask the user for a sandwich type with a user input: Chicken - $5.25, Beef - $6.25, Tofu - $5.75
+sandwich : input “What type of sandwich would you like? Chicken for $5.25, Beef for $6.25, Tofu for $5.75, or none? “
+
+Display the sandwich type using the following print statement : “You ordered a “ + sandwich + sandwich.”
+print “You ordered a “ + sandwich + “ sandwich.”
