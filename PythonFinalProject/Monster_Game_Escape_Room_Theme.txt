@@ -1,0 +1,46 @@
+
+Welcome to my escape room text adventure game by Harsha.
+The theme of the escape room is the Monster Game.
+Press Enter to Start!
+
+You woke up in a dark room. You don’t know where you are or how you got there. Do you want to go through one of the doors?
+1: Left Door
+2: Right Door
+3: Wait and just sit there for a minute
+3
+You are wasting your time! You are losing your chance!
+Do you want to go through one of these doors?
+1: Left Door
+2: Right Door
+3: Wait and just sit there for a minute
+1
+Good choice, but be ready for a fight.
+You can hear the sounds of a monster approaching in the darkness. What do you want to do?
+Fight or Flee?
+fight
+Choose 1 for hard attack, 2 for severe attack
+1
+Player attacks!
+Attack = 13 HP
+Enemy Health = -3
+
+Enemy attacks!
+Attack = 8 HP
+Player Health = 85
+
+You defeated the monster
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

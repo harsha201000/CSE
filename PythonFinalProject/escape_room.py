@@ -1,0 +1,176 @@
+# HarshaMalipeddi - Monster Game Escape Room
+# CSE Python Final Project - Beckmann 2025
+# OS Specifications : Windows 10 or higher
+
+# Import the random module
+import random
+# Import the os module
+import os
+
+# Clear the screen before the game starts
+os.system("cls")
+
+# The Start Screen (intro) of my Escape Room Game
+print("Welcome to my escape room text adventure game by Harsha.")
+print("The theme of the escape room is the monster game.")
+print("Press Enter to Start!")
+input()
+
+# Global Health Variables
+player = 100
+enemy = 100
+
+# Combat Functions
+def enemyAttack():
+    # The enemyAttack function removes health from the player
+    global player
+    enemyAttack = random.randint(5,10)
+    print("Enemy attacks!")
+    print("Attack = {} HP".format(enemyAttack))
+    player -= enemyAttack
+    print("Player Health : {}".format(player))
+
+def conservAttack():
+    # The conservAttack function removes health from the enemy
+    global enemy
+    attack = random.randint(10,15)
+    print("Player attacks!")
+    print("Attack = {} HP".format(attack))
+    enemy -= attack
+    print("Enemy Health : {}".format(enemy))
+
+def hardAttack():
+    # The hardAttack function also removes health from the enemy
+    global enemy
+    attack = random.randint(4,12)
+    print("Player attacks!")
+    print("Attack = {} HP".format(attack))
+    enemy -= attack
+    print("Enemy Health : {}".format(enemy))
+
+# Health Check/Game Over Function
+def checkPlayerHealth():
+    # The Health Check/Game Over Function checks the player's health to see if the game is over
+    if player < 1:
+        print("You died.")
+        exit()
+
+# Scenario 1
+print("You woke up in a dark room. You don't know where you are or how you got there.")
+print("You vaguely see two doors in front of you.")
+
+# Scenario 1 Loop - This loop is for going through one of the doors
+while True:
+    print("Do you want to go through one of the doors?")
+    print("1: left door")
+    print("2: right door")
+    print("3: just sit here for a minute")
+    response = input()
+    if response == "1":
+        print("Good choice, but be prepared for a fight.")
+        print("Do you want to sneak in quietly or rush in?")
+        print("1: Sneak")
+        print("2: Rush")
+        sneak_choice = input()
+        if sneak_choice == "1":
+            print("You sneak in quietly. You surprise the monster and deal some early damage!")
+            enemy -= 10
+            print("Enemy Health : {}".format(enemy))
+        elif sneak_choice == "2":
+            print("You rush in yelling. The monster hears you and is ready to fight.")
+        else:
+            print("You hesitate too long and the monster spots you.")
+        break
+    elif response == "2":
+        print("You like taking the hard way, don't you?")
+        enemy *= 2.5
+        break
+    elif response == "3":
+        print("You are wasting time! You are losing life!")
+        player -= 7
+        print("Health : {}".format(player))
+    else:
+        print("That is not a choice, try something else!")
+
+# Scenario 2
+print()
+print("You can hear the sounds of a monster approaching in the darkness. What do you want to do?")
+print()
+
+# Scenario 2 Loop - This loop is for player to attack the monster or the monster to attack the player
+while True:
+    checkPlayerHealth()
+    if enemy < 1:
+        print("You defeated the monster")
+        break
+    print("Fight or Flee?")
+    choice = input()
+    if choice in ["flee", "Flee"]:
+        break
+    elif choice in ["fight", "Fight"]:
+        print("Choose 1 for Hard Attack, 2 for Conservative Attack")
+        choice = input()
+        if choice == "1":
+            hardAttack()
+        elif choice == "2":
+            conservAttack()
+        else:
+            print("That is not a choice. Try again.")
+    else:
+        print("That is not a choice. Try again.")
+    print()
+    enemyAttack()
+    print()
+
+# Scenario 3
+print("After escaping the monster, you stuble into a strange glowing forest.")
+print("You see a glowing mushroom on a rock. It looks magical.")
+
+# Scenario 3 Loop - This loop is to let the player decide whether to eat the mushroom or not
+while True:
+    print("Do you want to eat the mushroom?")
+    print("1: Yes")
+    print("2: No")
+    choice = input()
+    if choice == "1":
+        print("You eat a mushroom. It heals you!")
+        player += 100
+        print("Player Health : {}".format(player))
+        break
+    elif choice == "2":
+        print("You ignore the mushroom and move on, but you feel like you missed something.")
+        break
+    else:
+        print("That is not a choice. Try Again!")
+
+# Scenario 4
+print()
+print("As you leave the forest, a new, stronger monster jumps down from the trees!")
+enemy = 100 # Reset the enemy's health
+print("Prepare for a battle")
+
+# Scenario 4 Loop - This loop is another combat loop to attack the forest beast or the forest beast to attack the player
+while True:
+    checkPlayerHealth()
+    if enemy < 1:
+        print("You defeated the monster")
+        break
+    print("Fight or Flee?")
+    choice = input()
+    if choice.lower() == "flee":
+        print("You run away and hide behind some trees.")
+        break
+    elif choice.lower() == "fight":
+        print("Choose 1 for Hard Attack, 2 for Conservative Attack")
+        choice = input()
+        if choice == "1":
+            hardAttack()
+        elif choice == "2":
+            conservAttack()
+        else:
+            print("That is not a choice. Try again.")
+    else:
+        print("That is not a choice. Try again.")
+    print()
+    enemyAttack()
+    print()
