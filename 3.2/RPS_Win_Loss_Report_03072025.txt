@@ -1,0 +1,155 @@
+--------------------------------------------------------------------------------
+Win-loss-tie report for team1:
+
+rrspprrspspprppspprr        team1: Beat last move if repeating 5-7-8
+prrsssrspsprsrprpssp        team2: Random
+
+rrssrsrsspssrpsrrppp        team1: Beat last move if repeating 6-8-6
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+rrpppprsprpssssspsss        team1: Beat last move if repeating 10-2-8
+rrrrrspsprpppppspppp        team4: RockEarlyPaperEven
+
+rrpspsrrsssppsrrrssr        team1: Beat last move if repeating 4-8-8
+rppsrsrpprrrssrppprr        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team2:
+
+prrsssrspsprsrprpssp        team2: Random 7-5-8
+rrspprrspspprppspprr        team1: Beat last move if repeating
+
+pssspsrpsspppsprprpp        team2: Random 5-4-11
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+pspsrrpsrsssrsrssrps        team2: Random 6-6-8
+rrrrrrprpspspppspsps        team4: RockEarlyPaperEven
+
+prrppsssrrprprrsspss        team2: Random 6-8-6
+rsppssrrrppspspprrsr        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team3:
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 8-6-6
+rrssrsrsspssrpsrrppp        team1: Beat last move if repeating
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 4-5-11
+pssspsrpsspppsprprpp        team2: Random
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 4-5-11
+rrrrrpprpsprpspsprpp        team4: RockEarlyPaperEven
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 10-0-10
+rprsrsrsrsrsrsrsrsrs        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team4:
+
+rrrrrspsprpppppspppp        team4: RockEarlyPaperEven 2-10-8
+rrpppprsprpssssspsss        team1: Beat last move if repeating
+
+rrrrrrprpspspppspsps        team4: RockEarlyPaperEven 6-6-8
+pspsrrpsrsssrsrssrps        team2: Random
+
+rrrrrpprpsprpspsprpp        team4: RockEarlyPaperEven 5-4-11
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+rrrrrpprppprppprpppp        team4: RockEarlyPaperEven 3-12-5
+rpppppsspssspssspsss        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team5:
+
+rppsrsrpprrrssrppprr        team5: BeatLastMove 8-4-8
+rrpspsrrsssppsrrrssr        team1: Beat last move if repeating
+
+rsppssrrrppspspprrsr        team5: BeatLastMove 8-6-6
+prrppsssrrprprrsspss        team2: Random
+
+rprsrsrsrsrsrsrsrsrs        team5: BeatLastMove 0-10-10
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+PS C:\Users\saisreeharshamalip28\Desktop\CSE\Unit 3\3.2\RPS> & "C:/Program Files/Python39/python.exe" "c:/Users/saisreeharshamalip28/Desktop/CSE/Unit 3/3.2/RPS/main.py"
+--------------------------------------------------------------------------------
+Win-loss-tie report for team1:
+
+rrspprrrsprrpssssrrp        team1: Beat last move if repeating 8-6-6
+prsrsssrrssprppsssrs        team2: Random
+
+rrpppsrpsspsrsrrrprs        team1: Beat last move if repeating 3-8-9
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+rrpppppsssppssppssss        team1: Beat last move if repeating 9-0-11
+rrrrrppppspppsppppps        team4: RockEarlyPaperEven
+
+rrpsprrssrprppprrsss        team1: Beat last move if repeating 6-8-6
+rppsrspprrpspssspprr        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team2:
+
+prsrsssrrssprppsssrs        team2: Random 6-8-6
+rrspprrrsprrpssssrrp        team1: Beat last move if repeating
+
+rrssrppppprrsprpprrs        team2: Random 5-9-6
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+pprpsssssrsprpspsrrs        team2: Random 9-6-5
+rrrrrrpsppppprppprpr        team4: RockEarlyPaperEven
+
+prrppprsprrspppprrpp        team2: Random 9-9-2
+rsppsssprspprsssspps        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team3:
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 8-3-9
+rrpppsrpsspsrsrrrprs        team1: Beat last move if repeating
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 9-5-6
+rrssrppppprrsprpprrs        team2: Random
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 4-7-9
+rrrrrrprpsprppprprpp        team4: RockEarlyPaperEven
+
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors 10-0-10
+rprsrsrsrsrsrsrsrsrs        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team4:
+
+rrrrrppppspppsppppps        team4: RockEarlyPaperEven 0-9-11
+rrpppppsssppssppssss        team1: Beat last move if repeating
+
+rrrrrrpsppppprppprpr        team4: RockEarlyPaperEven 6-9-5
+pprpsssssrsprpspsrrs        team2: Random
+
+rrrrrrprpsprppprprpp        team4: RockEarlyPaperEven 7-4-9
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+rrrrrrprpppsprpsprps        team4: RockEarlyPaperEven 5-7-8
+rppppppspsssrspsrsps        team5: BeatLastMove
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for team5:
+
+rppsrspprrpspssspprr        team5: BeatLastMove 8-6-6
+rrpsprrssrprppprrsss        team1: Beat last move if repeating
+
+rsppsssprspprsssspps        team5: BeatLastMove 9-9-2
+prrppprsprrspppprrpp        team2: Random
+
+rprsrsrsrsrsrsrsrsrs        team5: BeatLastMove 0-10-10
+rspspspspspspspspsps        team3: Rock first, then alternate paper and scissors
+
+rppppppspsssrspsrsps        team5: BeatLastMove 7-5-8
+rrrrrrprpppsprpsprps        team4: RockEarlyPaperEven
+
+--------------------------------------------------------------------------------
+Win-loss-tie report for round robin:
+
+26-22-32        team1: Beat last move if repeating
+29-32-19        team2: Random
+31-15-34        team3: Rock first, then alternate paper and scissors
+18-29-33        team4: RockEarlyPaperEven
+24-30-26        team5: BeatLastMove
